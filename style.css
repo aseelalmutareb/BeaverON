@@ -1,28 +1,41 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Vibur");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+  /* pink, white, cyan, orange, black */
+  --purple: #7b17a6;
+  --dark-purple: #5204bf;
+  --pink: #d911cb;
+  --blue: #007bfd;
+  --black: #100126;
+}
 header {
   width: 100%;
-  background-color: rgb(44, 46, 46);
+  background-color: var(--black);
   position: fixed;
   top: 1;
+  z-index: 2;
 }
 body {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(44, 46, 46);
+  background-color: var(--black);
+  font-family: "Roboto", "sans-serif";
+  font-size: 16px;
 }
 
 .logoImg {
   width: 140px;
 }
-.banner {
-  border: 1px red solid;
-}
+
 .videoBanner {
   object-fit: cover;
+  position: relative;
   width: 100%;
   height: 65%;
   z-index: -1;
-  overflow: hidden;
+  overflow: scroll;
 }
 .secondPhoto {
   object-fit: cover;
@@ -76,7 +89,6 @@ body {
 
 @media (max-width: 480px) {
   .wrapper_for_services {
-    border: 4px greenyellow solid;
     height: 100%;
   }
   .container__animation {
@@ -368,3 +380,138 @@ textarea {
 }
 
 /* Case Study END */
+.aboutBtn {
+  background-color: var(--dark-purple);
+}
+.aboutBtn:hover {
+  background-color: var(--pink);
+}
+
+/* NEON */
+
+.outer_logo {
+  position: absolute;
+  top: 350px;
+  left: 500px;
+  z-index: 1;
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* font: 400 12vh "Vibur"; */
+}
+.logo {
+  width: 35%;
+  user-select: none;
+}
+
+.logo,
+.logo b,
+.logo b span {
+  font: 400 12vh "Vibur";
+}
+
+.logo b {
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
+    0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo b span {
+  animation: blink linear infinite 2s;
+}
+
+.logo b span:nth-of-type(2) {
+  animation: blink linear infinite 3s;
+}
+@media screen and (max-width: 1500px) {
+  .outer_logo {
+    top: 250px;
+    left: 350px;
+  }
+  .logo,
+  .logo b,
+  .logo b span {
+    font: 400 12vh "Vibur";
+  }
+}
+@media screen and (max-width: 1400px) {
+  .outer_logo {
+    top: 200px;
+    left: 350px;
+  }
+  .logo,
+  .logo b,
+  .logo b span {
+    font: 400 10vh "Vibur";
+  }
+}
+@media screen and (max-width: 820px) {
+  .outer_logo {
+    top: 10px;
+    left: 200px;
+  }
+  .logo,
+  .logo b,
+  .logo b span {
+    font: 400 6vh "Vibur";
+  }
+}
+@media screen and (max-width: 800px) {
+  .outer_logo {
+    top: 75px;
+    left: 150px;
+  }
+  .logo,
+  .logo b,
+  .logo b span {
+    font: 400 8vh "Vibur";
+  }
+}
+@media screen and (max-width: 768px) {
+  .videoBanner {
+    height: 75vh;
+  }
+  .outer_logo {
+    top: 185px;
+    left: 85px;
+  }
+  .logo,
+  .logo b,
+  .logo b span {
+    font: 400 6vh "Vibur";
+  }
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79% {
+    color: #333;
+  }
+  80% {
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
