@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/jquery.waitforimages.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./slider/slider.css">
     <script
     src="https://kit.fontawesome.com/040851079e.js"
     crossorigin="anonymous"
@@ -165,7 +166,6 @@
       <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
         <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
         <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-
       </div>
       <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
@@ -192,122 +192,113 @@
   </div>
 </section>
 <!-- START SLIDERS CASE STUDIES -->
-<div class="containerSlide divSlide">
-    <div class="sliderSlide divSlide">
-      <div class="box1Slide boxSlide divSlide">
-        <div class="bgSlide divSlide"></div>
-        <div class="detailsSlide divSlide">
-          <h1>I'm the first Box</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            lacinia dui lectus. Donec scelerisque ipsum diam, ac mattis orci
-            pellentesque eget.
-          </p>
-          <button>Check Now</button>
-        </div>
-
-        <div class="illustrationSlide divSlide"><div class="innerSlide divSlide"></div></div>
-      </div>
-
-      <div class="box2Slide boxSlide divSlide">
-        <div class="bgSlide divSlide"></div>
-        <div class="detailsSlide divSlide">
-          <h1>I'm the second Box</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            lacinia dui lectus. Donec scelerisque ipsum diam, ac mattis orci
-            pellentesque eget.
-          </p>
-          <button>Check Now</button>
-        </div>
-
-        <div class="illustrationSlide divSlide"><div class="innerSlide divSlide"></div></div>
-      </div>
-
-      <div class="box3Slide boxSlide divSlide">
-        <div class="bgSlide divSlide"></div>
-        <div class="detailsSlide divSlide"> 
-          <h1>I'm the third Box</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            lacinia dui lectus. Donec scelerisque ipsum diam, ac mattis orci
-            pellentesque eget.
-          </p>
-          <button>Check Now</button>
-        </div>
-
-        <div class="illustrationSlide divSlide"><div class="innerSlide divSlide"></div></div>
-      </div>
-
-      <div class="box4Slide boxSlide divSlide">
-        <div class="bgSlide divSlide"></div>
-        <div class="detailsSlide divSlide">
-          <h1>I'm the fourth Box</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            lacinia dui lectus. Donec scelerisque ipsum diam, ac mattis orci
-            pellentesque eget.
-          </p>
-          <button>Check Now</button>
-        </div>
-
-        <div class="illustrationSlide divSlide"><div class="innerSlide divSlide"></div></div>
-      </div>
-
-      <div class="box5Slide boxSlide divSlide">
-        <div class="bgSlide divSlide"></div>
-        <div class="detailsSlide divSlide">
-          <h1>I'm the fifth Box</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            lacinia dui lectus. Donec scelerisque ipsum diam, ac mattis orci
-            pellentesque eget.
-          </p>
-          <button>Check Now</button>
-        </div>
-
-        <div class="illustrationSlide divSlide"><div class="innerSlide divSlide"></div></div>
-      </div>
-    </div>
-
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="prev"
-      width="56.898"
-      height="91"
-      viewBox="0 0 56.898 91"
-    >
-      <path
-        d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z"
-        transform="translate(0 91) rotate(-90)"
-        fill="#fff"
-      />
-    </svg>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="next"
-      width="56.898"
-      height="91"
-      viewBox="0 0 56.898 91"
-    >
-      <path
-        d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z"
-        transform="translate(56.898) rotate(90)"
-        fill="#fff"
-      />
-    </svg>
-    <div class="trailSlide divSlide">
-      <div class="box1Slide activeSlide divSlide">1</div>
-      <div class="box2Slide divSlide ">2</div>
-      <div class="box3Slide divSlide">3</div>
-      <div class="box4Slide divSlide">4</div>
-      <div class="box5Slide divSlide">5</div>
+<div class="wrap__studies">
+<div class="flex-container">
+  <div class="spinner"><p>
+    <div class="cube1"></div>
+    <div class="cube2"></div>
+    Loading...
+    </p>
+  </div>
+  <div class="flex-slide home">
+    <div class="flex-title flex-title-home">Home</div>
+    <div class="flex-about flex-about-home"><p>Click here to navigate to the home section of the website</p></div>
+  </div>
+  <div class="flex-slide about">
+    <div class="flex-title">About</div>
+    <div class="flex-about"><p>Click here to navigate to the About section of the website</p></div>
+  </div>
+  <div class="flex-slide work">
+    <div class="flex-title">Work</div>
+    <div class="flex-about"><p>Listing relevant snippets of work:</p>
+      <ul>
+        <li>First piece of work</li>
+        <li>Second piece of work</li>
+        <li>Third piece of work</li>
+      </ul>
     </div>
   </div>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+  <div class="flex-slide contact">
+    <div class="flex-title">Contact</div>
+        <div class="flex-about">
+          <p>Use the contact form below</p>
+          <form class="contact-form">
+            <p>Email <input type="text" name="email"></p>
+            <p>Comment <textarea type="text" name="comment" row="5"></textarea></p>
+            <p><input type="submit" name="email" value="Send Message"></p>
+          </form>
+    </div>
+  </div>
+</div>   
+</div>
 <!-- ENDS SLIDERS CASE STUDIES -->
-<script src="./slider/slider.js"></script>
+
+<!-- LOGOS -->
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto ">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Our Clients</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+    </div>
+    <div class="flex flex-wrap -m-2">
+      <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+          <div class="flex-grow">
+            <h2 class="text-white title-font font-medium">Holden Caulfield</h2>
+            <p class="text-gray-600">UI Designer</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84">
+          <div class="flex-grow">
+            <h2 class="text-white title-font font-medium">Henry Letham</h2>
+            <p class="text-gray-600">CTO</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88">
+          <div class="flex-grow">
+            <h2 class="text-white title-font font-medium">Oskar Blinde</h2>
+            <p class="text-gray-600">Founder</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/90x90">
+          <div class="flex-grow">
+            <h2 class="text-white title-font font-medium">John Doe</h2>
+            <p class="text-gray-600">DevOps</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/94x94">
+          <div class="flex-grow">
+            <h2 class="text-white title-font font-medium">Martin Eden</h2>
+            <p class="text-gray-600">Software Engineer</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/98x98">
+          <div class="flex-grow">
+            <h2 class="text-white title-font font-medium">Boris Kitua</h2>
+            <p class="text-gray-600">UX Researcher</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--   -->
     <script src="./app.js"></script>
   </body>
 </html>
