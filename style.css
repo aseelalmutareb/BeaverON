@@ -225,6 +225,17 @@ body {
 }
 /* end of proposal form styling */
 
+/* About Section */
+.our-about-section {
+  color: white;
+}
+
+.our-about-section h2{
+  font-size: 2rem;
+}
+
+/* */
+
 /* Animation for slide */
 .wrapper_for_services {
   display: flex;
@@ -577,25 +588,17 @@ textarea {
   background-color: var(--pink);
 }
 
-/* NEON */
-
+ /* NEON */
+/*
 .outer_logo {
-  /* position: absolute;
-  /* top: 50%; */
-  /* left: 50%; */
-
-  /* transform: translate(-50%, -50%); */
   z-index: 1;
   height: 50vh;
-  /*   width: 50vw; */
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  /* font: 400 12vh "Vibur"; */
 }
 .logo {
-  /*   width: 35%; */
   user-select: none;
 }
 
@@ -706,7 +709,7 @@ textarea {
     color: inherit;
     text-shadow: inherit;
   }
-}
+} */
 
 /* blue */
 @keyframes neon2 {
