@@ -144,9 +144,9 @@ body {
   padding: 2em;
   width: 400px;
   text-align: center;
-  background: rgba(63, 63, 63, 0.919);
+  background: var(--black);
   position: fixed;
-  color: white;
+  color: white; 
   top: 53%;
   right: -10.5%;
   /*   top: 50%;
@@ -171,42 +171,42 @@ body {
   resize: none;
 }
 .project-label {
-  display: block;
+/*   display: block;
   padding-left: 15px;
-  text-indent: -15px;
+  text-indent: -15px; */
 }
 .project-label input {
-  width: 15px;
+/*   width: 15px;
   height: 15px;
   padding: 0;
   margin: 0;
   vertical-align: bottom;
   position: relative;
-  top: -1px;
+  top: -1px; */
 }
 
 .project-type-dropdown {
-  border: 2px blue solid;
+  border: 2px var(--cyan) solid;
   display: flex;
 }
 .project-type-div-first div {
-  width: 80%;
+/*   width: 80%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .project-type-div-second div {
-  width: 80%;
+/*   width: 80%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
-.proposalFormBtn {
+.proposalFormSubmit,
+.proposalFormReset{
   width: 140px;
   display: inline-block;
-
-  background: teal;
-  color: #fff;
+  background: var(--cyan) !important; 
+  color: black;
   font-weight: 100;
   font-size: 1.2em;
   border: none;
