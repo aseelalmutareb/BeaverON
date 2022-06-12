@@ -9,6 +9,7 @@
   --pink: #d911cb;
   --blue: #007bfd;
   --black: #100126;
+  --cyan: rgb(20, 213, 213);
 }
 
 /* #preloader {
@@ -71,6 +72,118 @@ body {
   width: 100%;
   height: 55%;
 }
+
+/* Request a proposal button */
+.speech-bubble-wrapper{
+  position: fixed;
+  top: 80vh;
+  right: 20px;
+  z-index: 999;
+}
+  .speech-bubble-ds {
+    background: #efefef;
+    border: 1px solid #a7a7a7;
+    border-radius: 4px;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin: 0 auto 40px;
+    max-width: 150px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+ }
+/*  .speech-bubble-ds:hover {
+   background: var(--purple);
+   border-color: var(--purple);
+ } */
+  .speech-bubble-ds p {
+    margin-bottom: 10px;
+ }
+  .speech-bubble-ds p :last-of-type {
+    margin-bottom: 0;
+ }
+  .speech-bubble-ds__arrow {
+    border-left: 21px solid transparent;
+    border-top: 20px solid rgba(0, 0, 0, 0.2);
+    bottom: -25px;
+    position: absolute;
+    right: 15px;
+ }
+  .speech-bubble-ds__arrow::before {
+    border-left: 23px solid transparent;
+    border-top: 23px solid #a7a7a7;
+    bottom: 2px;
+    content: "";
+    position: absolute;
+    right: 5px;
+ }
+  .speech-bubble-ds__arrow::after {
+    border-left: 21px solid transparent;
+    border-top: 21px solid #efefef;
+    bottom: 4px;
+    content: "";
+    position: absolute;
+    right: 6px;
+ }
+  
+/* end of request proposal styling */
+
+/* proposal form start */
+
+#proposalForm { 
+  display: none;
+  z-index: 100;
+  border: 6px solid white; 
+  padding: 2em;
+  width: 400px;
+  text-align: center;
+  background: rgba(63, 63, 63, 0.919);
+  position: fixed;
+  color: white;
+  top:53%;
+  right:-10.5%;
+/*   top: 50%;
+  right: 0; */
+transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+  
+}
+
+#proposalForm input, #proposalForm textarea { 
+  margin: .8em auto;
+  font-family: inherit; 
+  text-transform: inherit; 
+  font-size: inherit;
+  
+  display: block; 
+  width: 280px; 
+  padding: .4em;
+}
+#proposalForm textarea { height: 80px; resize: none; }
+
+.project-type-dropdown {
+  display: grid;
+  border: 1px solid cyan;
+}
+
+.project-type-dropdown label {
+  display: block;
+}
+
+.proposalFormBtn { 
+  width: 140px;
+  display: inline-block;
+  
+  background: teal;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 30px;
+}
+/* end of proposal form styling */
 
 /* Animation for slide */
 .wrapper_for_services {
@@ -420,11 +533,12 @@ textarea {
 
 .outer_logo {
   position: absolute;
-  top: 350px;
-  left: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   z-index: 1;
   height: 50vh;
-  width: 50vw;
+/*   width: 50vw; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -432,14 +546,14 @@ textarea {
   /* font: 400 12vh "Vibur"; */
 }
 .logo {
-  width: 35%;
+/*   width: 35%; */
   user-select: none;
 }
 
 .logo,
 .logo b,
 .logo b span {
-  font: 400 12vh "Vibur";
+  font: 400 8vh "Vibur";
 }
 
 .logo b {
