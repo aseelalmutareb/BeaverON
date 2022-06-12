@@ -12,20 +12,20 @@
   --cyan: rgb(20, 213, 213);
 }
 
-/* #preloader {
+#preloader {
   background: rgb(0, 0, 0) url(./img/load.gif) no-repeat center;
   height: 100vh;
   width: 100vw;
   position: fixed;
-  animation: fadeOut 2s;
+  animation: fadeOut 3s;
   z-index: 1000;
-} */
+}
 @keyframes fadeOut {
   0% {
     opacity: 1;
   }
   100% {
-    opacity: 0.95;
+    opacity: 0;
   }
 }
 
@@ -56,7 +56,7 @@ body {
 }
 
 .logoImg {
-  width: 140px;
+  width: 240px;
 }
 
 .videoBanner {

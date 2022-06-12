@@ -1,14 +1,11 @@
-// // Pre-loader START
-// let loader = document.querySelector("#preloader")
-
-// window.addEventListener('load', function () {
-
-//     setTimeout(function () {
-//         loader.style.display = 'none';
-
-//     }, 2300)
-// })
-// Pre-loader END
+// Pre-loader START
+let loader = document.querySelector("#preloader")
+window.addEventListener('load', function () {
+    setTimeout(function () {
+        loader.style.display = 'none';
+    }, 3000)
+})
+// Pre - loader END
 const panels = document.querySelectorAll('.panel');
 
 panels.forEach((panel) => {
@@ -57,23 +54,23 @@ function removeActiveClasses() {
 })();
 
 /* proposal form */
-$(function() {
-  
+$(function () {
+
     // contact form animations
-    $('#speechBubble').click(function() {
-      $('#proposalForm').fadeToggle();
+    $('#speechBubble').click(function () {
+        $('#proposalForm').fadeToggle();
     })
     $(document).mouseup(function (e) {
-      var container = $("#proposalForm");
-  
-      if (!container.is(e.target) // if the target of the click isn't the container...
-          && container.has(e.target).length === 0) // ... nor a descendant of the container
-      {
-          container.fadeOut();
-      }
+        var container = $("#proposalForm");
+
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            container.fadeOut();
+        }
     });
-    
-  });
+
+});
 
 
 /* proposal form */
