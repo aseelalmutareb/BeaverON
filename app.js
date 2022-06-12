@@ -44,3 +44,25 @@ function removeActiveClasses() {
         );
     });
 })();
+
+/* proposal form */
+$(function() {
+  
+    // contact form animations
+    $('#speechBubble').click(function() {
+      $('#proposalForm').fadeToggle();
+    })
+    $(document).mouseup(function (e) {
+      var container = $("#proposalForm");
+  
+      if (!container.is(e.target) // if the target of the click isn't the container...
+          && container.has(e.target).length === 0) // ... nor a descendant of the container
+      {
+          container.fadeOut();
+      }
+    });
+    
+  });
+
+
+/* proposal form */
