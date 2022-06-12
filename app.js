@@ -1,3 +1,14 @@
+// // Pre-loader START
+// let loader = document.querySelector("#preloader")
+
+// window.addEventListener('load', function () {
+
+//     setTimeout(function () {
+//         loader.style.display = 'none';
+
+//     }, 2300)
+// })
+// Pre-loader END
 const panels = document.querySelectorAll('.panel');
 
 panels.forEach((panel) => {
