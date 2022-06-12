@@ -54,6 +54,11 @@ body {
   height: 55%;
 }
 
+.beaveron-video {
+  display: flex;
+  justify-content: center;
+}
+
 /* Request a proposal button */
 .speech-bubble-wrapper{
   position: fixed;
