@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Vibur");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Open+Sans&display=swap");
 :root {
   /* pink, white, cyan, orange, black */
   --purple: #7b17a6;
@@ -17,7 +17,7 @@
   height: 100vh;
   width: 100vw;
   position: fixed;
-  animation: fadeOut 3s;
+  animation: fadeOut 10s;
   z-index: 1000;
 }
 @keyframes fadeOut {
@@ -33,19 +33,27 @@
 
 header {
   width: 100%;
-  background-color: var(--black);
+  background-color: transparent;
   position: fixed;
   top: 1;
   z-index: 2;
 }
 .navLink {
-  font-size: 1.7rem;
+  text-align: center;
+  font-size: 7em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
   cursor: pointer;
-  color: rgb(222, 233, 233);
+  font-family: "Iceland";
+  font-size: 2.5rem;
+  animation: neon2 1.5s ease-in-out infinite alternate;
 }
 .navLink:hover {
-  color: cyan;
-  font-family: "Roboto";
+  color: rgba(115, 225, 247, 0.969);
+  /* font-family: "Roboto"; */
 }
 body {
   width: 100vw;
@@ -84,13 +92,16 @@ body {
   top: 80vh;
   right: 20px;
   z-index: 999;
+  font-family: "Iceland";
 }
 .speech-bubble-ds {
   background: #efefef;
   border: 1px solid #a7a7a7;
   border-radius: 4px;
+  color: #000000;
+
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.3;
   margin: 0 auto 40px;
   max-width: 150px;
@@ -284,7 +295,15 @@ body {
   font-size: 4rem;
   content: "\f1ea";
 }
-
+/* Values */
+.wrap-values {
+  height: 80vh;
+  color: rgb(200, 200, 200);
+}
+.values-div {
+  height: 40vh;
+  border: red 1px solid;
+}
 /* Case Study */
 
 $defaultSeconds: 3s;
@@ -685,5 +704,17 @@ textarea {
   92.5% {
     color: inherit;
     text-shadow: inherit;
+  }
+}
+
+/* blue */
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
   }
 }
