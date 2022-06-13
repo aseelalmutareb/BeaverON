@@ -2,9 +2,9 @@ body {
   width: 100%;
   height: 100%;
 }
-.contact-carrer {
+/* .contact-carrer {
   background-color: transparent;
-}
+} */
 .contactBanner {
   border-bottom: 4px solid var(--pink);
   width: 100%;
@@ -15,7 +15,7 @@ body {
   padding: 2%;
   box-shadow: 0 0 2px 4px rgb(138, 254, 254);
   font-size: 1.2rem !important;
-  background-color: rgb(177, 177, 177) !important;
+  background-color: rgba(243, 239, 239, 0.831) !important;
 }
 .pink-btn {
   background-color: var(--pink) !important;
