@@ -80,7 +80,6 @@ main {
   overflow: visible;
 }
 
-
 .secondPhoto {
   object-fit: cover;
   width: 100%;
@@ -596,14 +595,15 @@ textarea {
 }
 
 /* NEON */
-/*
+
 .outer_logo {
   z-index: 1;
+  position: absolute;
   height: 50vh;
+  width: 50vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
 }
 .logo {
   user-select: none;
@@ -703,8 +703,8 @@ textarea {
   82% {
     color: #333;
     text-shadow: none;
-  }wrap__studies
-  83% {
+  }
+  wrap__studies 83% {
     color: inherit;
     text-shadow: inherit;
   }
@@ -716,7 +716,7 @@ textarea {
     color: inherit;
     text-shadow: inherit;
   }
-} */
+}
 
 /* blue */
 @keyframes neon2 {
