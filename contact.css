@@ -2,3 +2,8 @@ body {
   width: 100%;
   height: 100%;
 }
+.form-contact-wrapper {
+  /* border: 5px solid rgb(73, 255, 255); */
+  padding: 2%;
+  box-shadow: 0 0 2px 4px rgb(138, 254, 254);
+}

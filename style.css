@@ -7,7 +7,7 @@
 :root {
   --purple: #7b17a6;
   --dark-purple: #5204bf;
-  --pink: #d911cb;
+  --pink: #d42c94;
   --blue: #007bfd;
   --black: #100126;
   --cyan: rgb(20, 213, 213);
@@ -46,7 +46,7 @@ header {
   margin-top: 0;
   line-height: 1;
   text-decoration: none;
-  color: var(--purple);
+  color: var(--pink);
   cursor: pointer;
   font-family: "Iceland";
   font-size: 2.5rem;

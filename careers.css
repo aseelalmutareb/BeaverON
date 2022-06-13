@@ -17,9 +17,10 @@ header {
   display: flex;
   font-size: 1.5rem;
   font-family: "Iceland";
+
   color: white;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   width: 100%;
   height: 30rem;
@@ -30,4 +31,17 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 25rem;
+}
+.header-carrer {
+  background-color: transparent;
+}
+.carrer-wrapper {
+  height: 75%;
+  width: 35%;
+}
+.upload-image-btn {
+  background-color: var(--pink);
+}
+.upload-image-btn:hover {
+  background-color: var(--cyan);
 }
