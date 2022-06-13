@@ -32,7 +32,7 @@
 
 header {
   width: 100%;
-  background-color: transparent;
+  background-color: var(--black);
   position: fixed;
   top: 1;
   z-index: 2;
@@ -63,6 +63,10 @@ body {
   color: white;
 }
 
+main {
+  padding-top: 10vh;
+}
+
 .logoImg {
   width: 240px;
 }
@@ -71,10 +75,12 @@ body {
   /*   object-fit: cover; */
   position: relative;
   width: 100%;
-  height: 95vh;
+  height: 88vh;
   z-index: -1;
   overflow: visible;
 }
+
+
 .secondPhoto {
   object-fit: cover;
   width: 100%;
@@ -216,7 +222,7 @@ body {
 .proposalFormReset {
   width: 140px;
   display: inline-block;
-  background: var(--cyan) !important;
+  background: var(--pink) !important;
   color: black;
   font-weight: 100;
   font-size: 1.2em;
