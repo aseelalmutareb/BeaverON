@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Iceland&family=Open+Sans&display=swap");
 :root {
-  /* pink, white, cyan, orange, black */
   --purple: #7b17a6;
   --dark-purple: #5204bf;
   --pink: #d911cb;
@@ -45,7 +44,7 @@ header {
   margin-top: 0;
   line-height: 1;
   text-decoration: none;
-  color: #fff;
+  color: var(--purple);
   cursor: pointer;
   font-family: "Iceland";
   font-size: 2.5rem;
@@ -61,6 +60,7 @@ body {
   background-color: var(--black);
   font-family: "Roboto", "sans-serif";
   font-size: 16px;
+  color: white;
 }
 
 .logoImg {
@@ -68,10 +68,10 @@ body {
 }
 
 .videoBanner {
-  object-fit: cover;
+  /*   object-fit: cover; */
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   z-index: -1;
   overflow: visible;
 }
@@ -722,6 +722,7 @@ textarea {
       0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
   }
 }
+y
 /* Style for home page */
 .about-home-center {
   font-size: 3rem;
