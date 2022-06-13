@@ -3,25 +3,66 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  overflow: scroll;
 }
 
-#header-about {
+.header-about {
   font-size: 2rem;
   text-align: justify;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .middle-box {
   font-size: 1.3rem;
-  width: 85%;
-  height: 50%;
-  justify-content: center;
-  align-items: center;
-  border: 1px red solid;
+  width: 50%;
+  height: 45%;
+  justify-content: center !important;
+  align-items: center !important;
   text-align: justify;
-  color: white;
+  color: #ffffff;
   margin-left: 1;
 }
 #header-about-third {
   font-size: 1rem;
+}
+.about-outer-text {
+  margin-top: 51%;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  font-family: "IceLand";
+}
+.about-outer-text div {
+  border: 2.5px red solid;
+  font-size: 1.8rem !important;
+  box-shadow: inset 0 0 0.5em 0 hsl(317 100% 54%), 0 0 0.5em 0 hsl(323 21% 16%);
+  font-size: 1.4rem;
+  width: 50%;
+  height: auto;
+  padding: 2rem;
+}
+.about-outer-text div:first-child {
+  margin-left: 15rem;
+  border-bottom: 4px;
+}
+.about-outer-text div:nth-child(2) {
+  margin-right: 15rem;
+}
+.about-outer-text div:nth-child(3) {
+  margin-left: 25rem;
+}
+.about-outer-text div:nth-child(4) {
+  text-align: center;
+  z-index: 5;
+  background-color: var(--pink);
+
+  color: rgb(255, 255, 255);
+}
+.about-outer-text div:nth-child(5) {
+  margin-right: 35rem;
+  line-height: 2.2;
 }
