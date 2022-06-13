@@ -5,64 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./careers.css" />
     <title>Careers</title>
   </head>
   <body>
     <header class="text-gray-600 body-font">
-        <div
-          class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center"
+      <div
+        class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center"
+      >
+        <a
+          href="index.html"
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
-          <a href="index.html"
-            class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          <img class="logoImg" src="./img/logo.png" alt="logoBeaver" />
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a class="navLink mr-5 hover:text-gray-900" href="about.html"
+            >About</a
           >
-            <img class="logoImg" src="./img/logo.png" alt="logoBeaver" />
-          </a>
-          <nav
-            class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+          <a class="navLink mr-5 hover:text-gray-900" href="services.html"
+            >Services</a
           >
-            <a class="navLink mr-5 hover:text-gray-900" href="about.html">About</a>
-            <a class="navLink mr-5 hover:text-gray-900" href="services.html">Services</a>
-            <a class="navLink mr-5 hover:text-gray-900">Careers</a>
-            <a class="navLink mr-5 hover:text-gray-900" href="contact.html">Contact</a>
-            <a href="./freeAudit.html" class="navLink mr-5 hover:text-gray-900"
-              >Free Audit</a
-            >
-          </nav>
+          <a class="navLink mr-5 hover:text-gray-900">Careers</a>
+          <a class="navLink mr-5 hover:text-gray-900" href="contact.html"
+            >Contact</a
+          >
+          <a href="./freeAudit.html" class="navLink mr-5 hover:text-gray-900"
+            >Free Audit</a
+          >
+        </nav>
+      </div>
+    </header>
+    <div class="video__wrapper">
+      <video
+        src="./video/Services.mp4"
+        class="videoBanner"
+        autoplay
+        loop
+        muted
+      ></video>
+    </div>
+    <div class="form-join ">
+      <div class="wrap-join flex flex-col text-center w-full mb-20">
+      <h1>Join the Beavers</h1>
+      <p>
+        We provide services for human-driven analysis and creatives of
+        real-world data and connection.
+      </p>
+      <p>Join us in our digital but humane endeavors.</p>
+      <p>
+        ALSO Young and ambitious YOU, you’re welcome in our Internship Program.
+      </p>
+    </div>
+      <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+        <div class="lg:w-1/2 px-6">
+      <form
+        accept-charset="UTF-8"
+        action="https://getform.io/f/256aaa5a-65ed-48e8-a53c-faff9d221b0d"
+        method="POST"
+        enctype="multipart/form-data"
+        target="_blank"
+      >
+        <div class="form-group">
+          <label for="exampleInputName">Full Name*</label>
+          <input
+            type="text"
+            name="fullname"
+            class="form-control"
+            id="exampleInputName"
+            placeholder="Your Name*"
+            required="required"
+          />
         </div>
-      </header>
-    
-      <div class="video__wrapper">
-        <video
-          src="./video/Services.mp4"
-          class="videoBanner"
-          autoplay
-          loop
-          muted
-       >    </video>
+        <div class="form-group">
+          <label for="exampleInputEmail1" required="required">Email address*</label >    
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Your Email*"
+          />
+        </div>
+        <div class="form-group mt-3">
+          <label class="mr-4">Upload your CV:</label>
+          <input type="file" class="text-white btn btn-submit bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+        </div>
+        <button type="submit"class="text-white btn btn-submit bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+        Submit
+      </button>
+      </form>
       </div>
-    <div class="col-md-6 offset-md-3 mt-5">
-        
-        <h1>Join the Beavers</h1>
-        <p>We provide services for human-driven analysis and creatives of real-world data and connection.</p>
-          <p>Join us in our digital but humane endeavors.</p>  
-           <p>ALSO Young and ambitious YOU, you’re welcome in our Internship Program. </p>
-        <form accept-charset="UTF-8" action="https://getform.io/f/256aaa5a-65ed-48e8-a53c-faff9d221b0d" method="POST" enctype="multipart/form-data" target="_blank">
-          <div class="form-group">
-            <label for="exampleInputName">Full Name*</label>
-            <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="Your Name*" required="required">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1" required="required">Email address*</label>
-            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email*">
-          </div>
-           <div class="form-group mt-3">
-            <label class="mr-4">Upload your CV:</label>
-            <input type="file" name="file">
-          </div>
-          <button type="submit" class="btn btn-submit">Submit</button>
-        </form>
-      </div>
+    </div>
+    <div>
   </body>
 </html>
