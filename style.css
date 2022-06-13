@@ -3,12 +3,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Iceland&family=Open+Sans&display=swap");
 :root {
-  /* pink, white, cyan, orange, black */
-  --purple: #7b17a6;
-  --dark-purple: #5204bf;
-  --pink: #d911cb;
-  --blue: #007bfd;
-  --black: white;
+
+  --purple: #7B17A6;
+  --dark-purple: #5204BF;
+  --pink: #D911CB;
+  --blue: #007BFD;
+  --black: #100126;
   --cyan: rgb(20, 213, 213);
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .videoBanner {
-  object-fit: cover;
+/*   object-fit: cover; */
   position: relative;
   width: 100%;
   height: 95vh;
@@ -157,7 +157,7 @@ body {
   text-align: center;
   background: var(--black);
   position: fixed;
-  color: white; 
+  color: white;
   top: 53%;
   right: -10.5%;
   /*   top: 50%;
@@ -182,12 +182,12 @@ body {
   resize: none;
 }
 .project-label {
-/*   display: block;
+  /*   display: block;
   padding-left: 15px;
   text-indent: -15px; */
 }
 .project-label input {
-/*   width: 15px;
+  /*   width: 15px;
   height: 15px;
   padding: 0;
   margin: 0;
@@ -201,22 +201,22 @@ body {
   display: flex;
 }
 .project-type-div-first div {
-/*   width: 80%;
+  /*   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center; */
 }
 .project-type-div-second div {
-/*   width: 80%;
+  /*   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center; */
 }
 .proposalFormSubmit,
-.proposalFormReset{
+.proposalFormReset {
   width: 140px;
   display: inline-block;
-  background: var(--cyan) !important; 
+  background: var(--cyan) !important;
   color: black;
   font-weight: 100;
   font-size: 1.2em;
@@ -230,7 +230,7 @@ body {
   color: white;
 }
 
-.our-about-section h2{
+.our-about-section h2 {
   font-size: 2rem;
 }
 
@@ -588,7 +588,7 @@ textarea {
   background-color: var(--pink);
 }
 
- /* NEON */
+/* NEON */
 /*
 .outer_logo {
   z-index: 1;
@@ -721,4 +721,13 @@ textarea {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
       0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
   }
+}
+/* Style for home page */
+.about-home-center {
+  font-size: 3rem;
+}
+.about-p {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  text-align: center;
 }

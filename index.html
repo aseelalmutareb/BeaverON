@@ -1,119 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/jquery.waitforimages.min.js"></script>
-		<link rel="stylesheet" href="style.css" />
-		<script
-			src="https://kit.fontawesome.com/040851079e.js"
-			crossorigin="anonymous"
-		></script>
-		<title>BEAVER ON WEBSITE</title>
-	</head>
-	<body>
-		<!-- <div id="preloader"></div> -->
-		<!-- NAVBAR START HERE-->
-		<header class="text-gray-600 body-font">
-			<div
-				class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center"
-			>
-				<a href="index.html"
-					class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-				>
-					<img class="logoImg" src="./img/logo.png" alt="logoBeaver" />
-				</a>
-				<nav
-					class="md:ml-auto flex flex-wrap items-center text-base justify-center"
-				>
-					<a class="navLink mr-5 hover:text-gray-900" href="about.html">About</a>
-					<a class="navLink mr-5 hover:text-gray-900" href="services.html">Services</a>
-					<a class="navLink mr-5 hover:text-gray-900">Careers</a>
-					<a class="navLink mr-5 hover:text-gray-900" href="contact.html">Contact</a>
-					<a href="./freeAudit.html" class="navLink mr-5 hover:text-gray-900"
-						>Free Audit</a
-					>
-				</nav>
-			</div>
-		</header>
-		<!-- NAVBAR ENDS -->
-		<!-- Banner Starts Here -->
-		<!-- Neon Logo -->
-		<div class="video__wrapper">
-			<video
-				src="./video/banner-video.mp4"
-				class="videoBanner"
-				autoplay
-				loop
-				muted
-			></video>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/jquery.waitforimages.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/040851079e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>BEAVER ON WEBSITE</title>
+  </head>
+  <body>
+    <!-- <div id="preloader"></div> -->
+    <!-- NAVBAR START HERE-->
+    <header class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center"
+      >
+        <a
+          href="index.html"
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <img class="logoImg" src="./img/logo.png" alt="logoBeaver" />
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a class="navLink mr-5 hover:text-gray-900" href="about.html"
+            >About</a
+          >
+          <a class="navLink mr-5 hover:text-gray-900" href="services.html"
+            >Services</a
+          >
+          <a class="navLink mr-5 hover:text-gray-900">Careers</a>
+          <a class="navLink mr-5 hover:text-gray-900" href="contact.html"
+            >Contact</a
+          >
+          <a href="./freeAudit.html" class="navLink mr-5 hover:text-gray-900"
+            >Free Audit</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- NAVBAR ENDS -->
+    <!-- Banner Starts Here -->
+    <!-- Neon Logo -->
+    <div class="video__wrapper">
+      <video
+        src="./video/beaver-on4k.mp4"
+        class="videoBanner"
+        autoplay
+        loop
+        muted
+      ></video>
+    </div>
 
-		<!-- REQUEST A PROPOSAL START -->
-		<div class="speech-bubble-wrapper" id="speechBubble">
-			<div class="speech-bubble-ds">
-				<p><strong>REQUEST A PROPOSAL</strong></p>
-				<div class="speech-bubble-ds__arrow"></div>
-			</div>
-		</div>
-		<!-- REQUEST A PROPOSAL END -->
+    <!-- REQUEST A PROPOSAL START -->
+    <div class="speech-bubble-wrapper" id="speechBubble">
+      <div class="speech-bubble-ds">
+        <p><strong>REQUEST A PROPOSAL</strong></p>
+        <div class="speech-bubble-ds__arrow"></div>
+      </div>
+    </div>
+    <!-- REQUEST A PROPOSAL END -->
 
-		<!-- PROPOSAL FORM START -->
-		<div id="proposalForm">
-			<h1>Request a Proposal</h1>
-			<small>Fill Out Our Form & We'll be in Touch Shortly</small>
+    <!-- PROPOSAL FORM START -->
+    <div id="proposalForm">
+      <h1>Request a Proposal</h1>
+      <small>Fill Out Our Form & We'll be in Touch Shortly</small>
 
-			<form action="#">
-				<input placeholder="First Name *" type="text" required />
-				<input placeholder="Last Name *" type="text" required />
-				<input placeholder="Email *" type="email" required />
-				<input placeholder="Phone *" type="tel" required />
-				<input placeholder="Company *" type="text" required />
+      <form action="#">
+        <input placeholder="First Name *" type="text" required />
+        <input placeholder="Last Name *" type="text" required />
+        <input placeholder="Email *" type="email" required />
+        <input placeholder="Phone *" type="tel" required />
+        <input placeholder="Company *" type="text" required />
 
-				<textarea placeholder="Project Details *"></textarea>
-				<input class="proposalFormSubmit" type="submit" />
-				<input class="proposalFormReset" type="reset" />
-			</form>
-		</div>
-		<!-- PROPOSAL FORM END -->
+        <textarea placeholder="Project Details *"></textarea>
+        <input class="proposalFormSubmit" type="submit" />
+        <input class="proposalFormReset" type="reset" />
+      </form>
+    </div>
+    <!-- PROPOSAL FORM END -->
 
-		<!-- about new start -->
-		<section class="text-gray-600 body-font">
-			<div
-				class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-			>
-				<div
-					class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-				>
-					<h1
-						class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
-					>
-						Before they sold out <br class="hidden lg:inline-block" />readymade
-						gluten
-					</h1>
-					<p class="mb-8 leading-relaxed">
-						Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
-						plant cold-pressed tacos poke beard tote bag. Heirloom echo park
-						mlkshk tote bag selvage hot chicken authentic tumeric truffaut
-						hexagon try-hard chambray.
-					</p>
-				</div>
-				<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-					<img
-						class="object-cover object-center rounded"
-						alt="hero"
-						src="./img/media/media1.png"
-					/>
-				</div>
-			</div>
-		</section>
-		<!-- about new ends -->
+    <!-- about new start -->
+    <section class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <p class="about-p mb-8 leading-relaxed">
+            Award-winning, top-rated, New York-based global digital agency
+            highlighting <i>website design</i> and <i>development</i>, Beaver GO
+            has the combined strategy, creativity, and intelligence to deliver
+            and boost all <i>digital marketing</i> channels and technology.
+          </p>
+          <p class="about-p mb-8 leading-relaxed">
+            Its focus from the transformational business web, digital, and
+            marketing solutions, to the production of distinctive performance in
+            transforming client's needs and goals towards branding,
+            <i>social media</i>
+            positioning, rich PR connections and campaigns, eCommerce, SEO
+            enhancements, and maximizing online presence into desired results
+            and top ROI.
+          </p>
+          <p class="about-p mb-8 leading-relaxed">
+            The Beavers are a core team of marketing experts and website
+            developers from around the globe, who build strong pillars of
+            service, ready to serve round-the-clock. Our full-time staff of 35
+            is supplemented by an extended network that brings further in-depth
+            knowledge skills, and perspectives to our wide range of services.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- about new ends -->
 
-		<!-- ABOUT initial one-->
-		<!-- <section class="our-about-section" id="about">
+    <!-- ABOUT initial one-->
+    <!-- <section class="our-about-section" id="about">
       <div class="container px-5 py-24 mx-auto">
         <div
           class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto"
@@ -127,9 +137,9 @@
           </div>
       </div>
     </section> -->
-		<!-- ABOUT END -->
+    <!-- ABOUT END -->
 
-		<!--     <div class="outer_logo">
+    <!--     <div class="outer_logo">
       <div class="logo">
         <b>
           <span>W</span><span>e</span>
@@ -145,44 +155,43 @@
       </div>
     </div > -->
 
-		<!-- SERVICES START HERE -->
+    <!-- SERVICES START HERE -->
 
-		<h1>SERVICES HEADING HERE</h1>
-		<div class="wrapper_for_services">
-			<div class="container__animation">
-				<div
-					class="panel"
-					style="background-image: url(./img/media/media1.png)"
-				>
-					<h3>Online Marketing</h3>
-				</div>
-				<div
-					class="panel"
-					style="background-image: url(./img/media/media2.png)"
-				>
-					<h3>Elevate The Spirit</h3>
-				</div>
-				<div
-					class="panel"
-					style="background-image: url(./img/media/media3.png)"
-				>
-					<h3>SEM</h3>
-				</div>
-				<div
-					class="panel"
-					style="background-image: url(./img/media/media4.png)"
-				>
-					<h3>Performance & Analytics</h3>
-				</div>
-			</div>
-		</div>
+    <div class="wrapper_for_services">
+      <div class="container__animation">
+        <div
+          class="panel"
+          style="background-image: url(./img/media/media1.png)"
+        >
+          <h3>Online Marketing</h3>
+        </div>
+        <div
+          class="panel"
+          style="background-image: url(./img/media/media2.png)"
+        >
+          <h3>Web Development</h3>
+        </div>
+        <div
+          class="panel"
+          style="background-image: url(./img/media/media3.png)"
+        >
+          <h3>SEM</h3>
+        </div>
+        <div
+          class="panel"
+          style="background-image: url(./img/media/media4.png)"
+        >
+          <h3>Performance & Analytics</h3>
+        </div>
+      </div>
+    </div>
 
-		<!-- Case Studies -->
+    <!-- Case Studies -->
 
-		<!-- End of Case Studies-->
+    <!-- End of Case Studies-->
 
-		<!-- Values -->
-		<!--     <section class="text-gray-600 body-font">
+    <!-- Values -->
+    <!--     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
         
@@ -267,8 +276,8 @@
       </div>
     </section> -->
 
-		<!-- START SLIDERS CASE STUDIES -->
-		<!-- <div class="wrap__studies">
+    <!-- START SLIDERS CASE STUDIES -->
+    <!-- <div class="wrap__studies">
 <div class="flex-container">
   <div class="spinner"><p>
     <div class="cube1"></div>
@@ -307,120 +316,120 @@
   </div>
 </div>   
 </div> -->
-		<!-- ENDS SLIDERS CASE STUDIES -->
+    <!-- ENDS SLIDERS CASE STUDIES -->
 
-		<!-- LOGOS -->
-		<section class="text-gray-400 bg-gray-900 body-font">
-			<div class="container px-5 py-24 mx-auto">
-				<div class="flex flex-col text-center w-full mb-20">
-					<h1
-						class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white"
-					>
-						Our Clients
-					</h1>
-					<p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-						Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-						gentrify, subway tile poke farm-to-table. Franzen you probably
-						haven't heard of them.
-					</p>
-				</div>
-				<div class="flex flex-wrap -m-2">
-					<div class="p-2 lg:w-1/6 md:w-1/2 w-full">
-						<div
-							class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
-						>
-							<img
-								alt="team"
-								class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-								src="https://dummyimage.com/80x80"
-							/>
-							<div class="flex-grow">
-								<h2 class="text-white title-font font-medium">
-									Holden Caulfield
-								</h2>
-								<p class="text-gray-600">UI Designer</p>
-							</div>
-						</div>
-					</div>
-					<div class="p-2 lg:w-1/6 md:w-1/2 w-full">
-						<div
-							class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
-						>
-							<img
-								alt="team"
-								class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-								src="https://dummyimage.com/84x84"
-							/>
-							<div class="flex-grow">
-								<h2 class="text-white title-font font-medium">Henry Letham</h2>
-								<p class="text-gray-600">CTO</p>
-							</div>
-						</div>
-					</div>
-					<div class="p-2 lg:w-1/6 md:w-1/2 w-full">
-						<div
-							class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
-						>
-							<img
-								alt="team"
-								class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-								src="https://dummyimage.com/88x88"
-							/>
-							<div class="flex-grow">
-								<h2 class="text-white title-font font-medium">Oskar Blinde</h2>
-								<p class="text-gray-600">Founder</p>
-							</div>
-						</div>
-					</div>
-					<div class="p-2 lg:w-1/6 md:w-1/2 w-full">
-						<div
-							class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
-						>
-							<img
-								alt="team"
-								class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-								src="https://dummyimage.com/90x90"
-							/>
-							<div class="flex-grow">
-								<h2 class="text-white title-font font-medium">John Doe</h2>
-								<p class="text-gray-600">DevOps</p>
-							</div>
-						</div>
-					</div>
-					<div class="p-2 lg:w-1/6 md:w-1/2 w-full">
-						<div
-							class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
-						>
-							<img
-								alt="team"
-								class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-								src="https://dummyimage.com/94x94"
-							/>
-							<div class="flex-grow">
-								<h2 class="text-white title-font font-medium">Martin Eden</h2>
-								<p class="text-gray-600">Software Engineer</p>
-							</div>
-						</div>
-					</div>
-					<div class="p-2 lg:w-1/6 md:w-1/2 w-full">
-						<div
-							class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
-						>
-							<img
-								alt="team"
-								class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-								src="https://dummyimage.com/98x98"
-							/>
-							<div class="flex-grow">
-								<h2 class="text-white title-font font-medium">Boris Kitua</h2>
-								<p class="text-gray-600">UX Researcher</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--   -->
-		<script src="./app.js"></script>
-	</body>
+    <!-- LOGOS -->
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white"
+          >
+            Clients
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+            gentrify, subway tile poke farm-to-table. Franzen you probably
+            haven't heard of them.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://dummyimage.com/80x80"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Holden Caulfield
+                </h2>
+                <p class="text-gray-600">UI Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://dummyimage.com/84x84"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Henry Letham</h2>
+                <p class="text-gray-600">CTO</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://dummyimage.com/88x88"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Oskar Blinde</h2>
+                <p class="text-gray-600">Founder</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://dummyimage.com/90x90"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">John Doe</h2>
+                <p class="text-gray-600">DevOps</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://dummyimage.com/94x94"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Martin Eden</h2>
+                <p class="text-gray-600">Software Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/6 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://dummyimage.com/98x98"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Boris Kitua</h2>
+                <p class="text-gray-600">UX Researcher</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--   -->
+    <script src="./app.js"></script>
+  </body>
 </html>
