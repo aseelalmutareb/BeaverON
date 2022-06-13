@@ -2,6 +2,14 @@ body {
   width: 100%;
   height: 100%;
 }
+.contact-carrer {
+  background-color: transparent;
+}
+.contactBanner {
+  border-bottom: 4px solid var(--pink);
+  width: 100%;
+  height: 35rem;
+}
 .form-contact-wrapper {
   /* border: 5px solid rgb(73, 255, 255); */
   padding: 2%;

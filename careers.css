@@ -40,8 +40,9 @@ header {
   width: 35%;
 }
 .upload-image-btn {
-  background-color: var(--pink);
+  background-color: var(--pink) !important;
 }
 .upload-image-btn:hover {
-  background-color: var(--cyan);
+  background-color: var(--cyan) !important;
+  cursor: pointer;
 }
