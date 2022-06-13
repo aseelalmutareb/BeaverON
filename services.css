@@ -36,3 +36,11 @@
 
   flex-direction: column;
 }
+
+.pink-btn {
+  background-color: var(--pink) !important;
+}
+
+.pink-btn:hover {
+  background-color: var(--cyan) !important;
+}
