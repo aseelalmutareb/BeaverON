@@ -11,7 +11,20 @@ body {
   height: 35rem;
 }
 .form-contact-wrapper {
-  /* border: 5px solid rgb(73, 255, 255); */
+  border: 5px solid rgba(73, 255, 255, 0.755);
   padding: 2%;
   box-shadow: 0 0 2px 4px rgb(138, 254, 254);
+  font-size: 1.2rem !important;
+  background-color: rgb(177, 177, 177) !important;
+}
+.pink-btn {
+  background-color: var(--pink) !important;
+}
+.pink-btn:hover {
+  background-color: var(--cyan);
+}
+.frame-border {
+  border-bottom: 8px solid var(--pink);
+  border-top: 8px solid var(--pink);
+  box-shadow: 0 0 2px 4px rgb(248, 138, 254);
 }
