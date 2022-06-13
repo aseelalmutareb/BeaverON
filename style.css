@@ -222,13 +222,14 @@ main {
 .proposalFormReset {
   width: 140px;
   display: inline-block;
-  background: var(--pink) !important;
-  color: black;
+  background: var(--purple) !important;
+  color: white;
   font-weight: 100;
   font-size: 1.2em;
   border: none;
   height: 30px;
 }
+
 /* end of proposal form styling */
 
 /* About Section */
@@ -247,7 +248,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 60vh;
   overflow: hidden;
   margin: 0;
 }
@@ -415,7 +416,7 @@ body {
 .home {
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./img/study-cases/safal-karki-9M-3imQUZp4-unsplash.jpg);
+    url(./img/media/media1.png);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
